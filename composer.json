@@ -1,0 +1,33 @@
+{
+    "name": "fightmaster/porpaginas-bundle",
+    "type": "symfony-bundle",
+    "description": "Symfony bundle for the porpaginas beberlei/porpaginas.",
+    "keywords": ["page","paging", "paginator", "pagination"],
+    "homepage": "https://github.com/fightmaster/PorpaginasBundle",
+    "license": "MIT",
+
+    "authors": [
+        {
+            "name": "Dmitry Petrov",
+            "email": "old.fightmaster@gmail.com"
+        }
+    ],
+
+    "require": {
+        "php": ">=5.3.3",
+        "beberlei/porpaginas": "dev-master",
+        "symfony/framework-bundle": "~2.1"
+    },
+
+    "autoload": {
+        "psr-0": {
+            "Porpaginas\\PorpaginasBundle": ""
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.0.*-dev"
+        }
+    },
+    "target-dir": "Porpaginas/PorpaginasBundle"
+}
