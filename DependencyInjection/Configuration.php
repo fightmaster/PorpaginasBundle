@@ -29,6 +29,9 @@ class Configuration implements ConfigurationInterface
         $treeBuilder = new TreeBuilder();
         $treeBuilder->root('porpaginas')
             ->children()
+                ->integerNode('per_page')
+                    ->isRequired()
+                ->end()
                 ->enumNode('paginator')
                     ->values(array(self::KNP_PAGINATOR, self::PAGERFANTA))
                     ->cannotBeEmpty()
